@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="result-card">
+
+        <h1>Prediction Result</h1>
+
+        <h2 style="color: {{ color }}">
+            {{ prediction }}
+        </h2>
+
+        <h3>
+            Confidence: {{ confidence }}%
+        </h3>
+
+        <br>
+
+        <a href="javascript:history.back()">
+            <button>Try Again</button>
+        </a>
+
+        <a href="/">
+            <button>Home</button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>

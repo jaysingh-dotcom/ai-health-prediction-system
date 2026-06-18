@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Migraine Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Migraine Prediction</h1>
+
+        <form action="/predict_migraine" method="POST" class="form-grid">
+
+            <div class="form-group">
+                <label>Age</label>
+                <input type="number" name="Age" required>
+            </div>
+
+            <div class="form-group">
+                <label>Duration</label>
+                <input type="number" name="Duration" required>
+            </div>
+
+            <div class="form-group">
+                <label>Frequency</label>
+                <input type="number" name="Frequency" required>
+            </div>
+
+            <div class="form-group">
+                <label>Location</label>
+                <select name="Location">
+                    <option value="0">Location Type 0</option>
+                    <option value="1">Location Type 1</option>
+                    <option value="2">Location Type 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Character</label>
+                <select name="Character">
+                    <option value="0">Character Type 0</option>
+                    <option value="1">Character Type 1</option>
+                    <option value="2">Character Type 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Intensity</label>
+                <select name="Intensity">
+                    <option value="0">Very Mild</option>
+                    <option value="1">Mild</option>
+                    <option value="2">Moderate</option>
+                    <option value="3">Severe</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Nausea</label>
+                <select name="Nausea">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Vomit</label>
+                <select name="Vomit">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Phonophobia</label>
+                <select name="Phonophobia">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Photophobia</label>
+                <select name="Photophobia">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Visual Aura</label>
+                <select name="Visual">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Sensory Aura</label>
+                <select name="Sensory">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Dysphasia</label>
+                <select name="Dysphasia">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Dysarthria</label>
+                <select name="Dysarthria">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Vertigo</label>
+                <select name="Vertigo">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Tinnitus</label>
+                <select name="Tinnitus">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Hypoacusis</label>
+                <select name="Hypoacusis">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Diplopia</label>
+                <select name="Diplopia">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Defect</label>
+                <select name="Defect">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Ataxia</label>
+                <select name="Ataxia">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Conscience Disturbance</label>
+                <select name="Conscience">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Paresthesia</label>
+                <select name="Paresthesia">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>DPF</label>
+                <select name="DPF">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Predict Migraine Type
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

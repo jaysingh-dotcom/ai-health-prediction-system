@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="home-container">
+
+    <h1>Healthcare Prediction System</h1>
+
+    <p>
+        Predict Diabetes Risk and Migraine Type using Machine Learning.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Diabetes Prediction</h2>
+            <p>
+                Predict whether a patient is diabetic or non-diabetic.
+            </p>
+
+            <a href="/diabetes">
+                <button>Open Diabetes Predictor</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>Migraine Prediction</h2>
+            <p>
+                Predict the migraine category using symptoms.
+            </p>
+
+            <a href="/migraine">
+                <button>Open Migraine Predictor</button>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
